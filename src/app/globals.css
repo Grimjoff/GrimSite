@@ -1,0 +1,201 @@
+/* Flexbox to center elements horizontally and vertically */
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flexbox to stack elements vertically */
+.flex-col-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Center the container horizontally */
+.center-horizontally {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Padding around the container */
+.padding-4 {
+  padding: 1rem; /* Equivalent to p-4 in Tailwind */
+}
+
+/* Rounded corners */
+.rounded-xl {
+  border-radius: 1rem;
+}
+
+/* Shadow for the container */
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Stronger shadow on hover */
+.hover-shadow-2xl:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Maximum width for the container */
+.max-width-xl {
+  max-width: 36rem; /* Equivalent to max-w-xl in Tailwind */
+}
+
+/* Center text */
+.text-center {
+  text-align: center;
+}
+
+/* Text color for white */
+.text-white {
+  color: #ffffff;
+}
+
+/* Margin at the bottom */
+.margin-bottom-8 {
+  margin-bottom: 2rem; /* Equivalent to mb-8 */
+}
+
+/* Font size for large text */
+.text-4xl {
+  font-size: 2.25rem; /* Equivalent to text-4xl */
+}
+
+/* Font weight for bold text */
+.font-bold {
+  font-weight: 700;
+}
+
+/* Text color for gray */
+.text-gray-800 {
+  color: #2d3748;
+}
+.text-black {
+  color: #000000;
+}
+.transparent-background:hover {
+  border-color: #FFD700; /* Change this to the desired hover color */
+}
+.text-gold {
+  color: #FFD700;
+
+}
+.clicked-text-container {
+  background-color: transparent;
+  border: 2px solid #000; /* Default border color */
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+/* Font size for large text */
+.text-lg {
+  font-size: 1.125rem; /* Equivalent to text-lg in Tailwind */
+}
+
+/* Capitalize text */
+.capitalize {
+  text-transform: capitalize;
+}
+.transparent-background {
+  background-color: transparent !important;
+  border: 2px solid #000; /* You can customize the border color and width */
+}
+.flex-row-stack {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* Space between items */
+  justify-content: center; /* Center items */
+  align-items: center; /* Align items vertically in the row */
+}
+.icon-size {
+  width: 2.5rem; /* 10 * 0.25rem = 2.5rem */
+  height: 2.5rem; /* Ensures both dimensions are equal */
+  object-fit: contain; /* Ensures aspect ratio is maintained */
+}
+
+.link-container {
+  text-decoration: none; /* This removes the underline */
+  display: flex;
+  align-items: center;
+  /*justify-content: center; */
+  gap: 1rem; /* Space between the icon and the text */
+  padding: 1rem; /* Padding around the content */
+  background-color: #ffffff; /* White background */
+  border-radius: 1rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
+}
+
+
+.link-container:hover {
+  border-color: #FFD700; /* Change border color on hover */
+  background-color: rgba(255, 87, 51, 0.1); /* Add a subtle background color on hover */
+  color: #FFD700; /* Change text color on hover */
+}
+.link-container:hover .text-black{
+   color: #FFD700;
+}
+
+body {
+  background-image: url('Kirby3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: oklch(0.145 0 0); /* Ensure text is visible */
+}
+.icon-container {
+  padding: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 5px ;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
+  border-radius: 1rem; /* Rounded corners */
+
+}
+.text-container {
+  background-color: transparent;
+  border: 2px solid #FFD700;
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: border-color 0.3s ease;
+  min-width: 250px;
+}
+
+.text-container p {
+  margin: 0;
+}
+.interactive-icon:hover {
+  transform: scale(1.2);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.icon-size-small {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+}
+
+/* Smaller padding for selector icons */
+.padding-2 {
+  padding: 0.5rem;
+}
+
+/* Transparent background for selectors */
+
+/* Optional: Ensure the entire page stretches to full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove Tailwind's base layer conflicting styles */
+* {
+  border-color: oklch(0.922 0 0);
+  outline-color: oklch(0.708 0 0);
+}
