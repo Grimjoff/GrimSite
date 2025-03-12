@@ -151,7 +151,7 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-left: 5px ;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
   transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
