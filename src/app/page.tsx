@@ -1,7 +1,8 @@
 'use client'
-import {useEffect, useState} from "react";
 
 // Define the Link type
+import {useState} from "react";
+
 type Link = {
   id: string
   url: string
@@ -63,28 +64,6 @@ export default function Home() {
     setCustomMessage(customMessages[iconName]);
 
   };
-  useEffect(() => {
-    const mouseFollow = document.querySelector('.mouse-follow');
-
-    const handleMouseMove = (event) => {
-      if (!mouseFollow) return; // Ensure the element exists
-
-      const mouseX = event.clientX;
-      const mouseY = event.clientY;
-
-      // Update the mouse-follow element's position
-      mouseFollow.style.left = `${mouseX}px`;
-      mouseFollow.style.top = `${mouseY}px`;
-    };
-
-    document.addEventListener('mousemove', handleMouseMove);
-
-    // Cleanup the event listener when the component is unmounted
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    };
-
-  }, []); // Empty dependency array to run only once, on mount
 
   return (
       <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500">
@@ -138,9 +117,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Mouse-follow element */}
-        <div className="mouse-follow"></div>
       </div>
   )
 }
